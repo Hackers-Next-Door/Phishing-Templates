@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        * {
+            font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        }
+
+        .alert-header {
+            border-radius: 5px 5px 0px 0px;
+            background-color: red;
+            padding: 20px 20px 20px 30px;
+            height: 10px;
+            color: #fff;
+            font-weight: 100;
+        }
+
+        .alert-header img {
+            height: 15px;
+            width: 15px;
+        }
+
+        .card {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            /* 5px rounded corners */
+            border-radius: 5px;
+            width: 450px;
+            /* height: 1000px; */
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 16px;
+
+            padding: 5px 20px 20px 30px;
+        }
+
+        .title {
+            font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+            color: rgba(0, 0, 0, 0.87);
+            line-height: 32px;
+            padding-bottom: 5px;
+            word-break: break-word;
+            font-size: 20px;
+        }
+
+        .internal-text {
+            font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.77);
+            line-height: 20px;
+            text-align: left;
+            padding-bottom: 20px;
+            border-bottom: thin solid #dadce0;
+        }
+
+        .final-text {
+            font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.77);
+            line-height: 20px;
+            text-align: left;
+        }
+
+        .icon-style>svg {
+            padding-top: 7px;
+            padding-right: 10px;
+            font-size: 18px;
+        }
+
+        .button {
+            border-radius: 5px;
+            padding: 10px 10px 10px 10px;
+            border: thin solid #dadce0;
+            color: rgba(0, 0, 0, 0.67);
+            text-align: left;
+            background-color: #fff;
+            font-weight: bold;
+            font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        .ip-address-text {
+            padding-left: 13px;
+            color: rgba(0, 0, 0, 0.67);
+        }
+
+        .wrapper-btns {
+            display: flex;
+        }
+
+        .wrapper-btns .btn-back,
+        .wrapper-btns .btn-next {
+
+            padding: 10px 10px 10px 10px;
+            border-radius: 5px;
+
+            border: thin solid #dadce0;
+            color: rgba(0, 0, 0, 0.67);
+            text-align: center;
+            background-color: #fff;
+            font-weight: bold;
+            font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        .btn-next:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .btn-back:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .wrapper-btns .btn-back {
+            width: 100%;
+            margin-right: 5px;
+        }
+
+        .wrapper-btns .btn-next {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="alert-header">
+            <tr>
+                <td>
+                    <!-- <svg style="padding-right: 8px;" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1.5em"
+                        width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg> -->
+
+                    <img src="https://www.iconsdb.com/icons/preview/white/warning-2-xxl.png" alt="warning-icon"
+                        style="padding-right: 8px;">
+                </td>
+                <td>
+                    <b>
+                        Alerta de seguridad crítica
+                    </b>
+                </td>
+            </tr>
+        </div>
+        <div class="container">
+            <p class="title">
+                Se ha impedido un intento de inicio de sesión sospechoso
+            </p>
+
+            <div class="internal-text">
+
+                <p>
+                    Hemos impedido que alguien que conoce tu contraseña iniciara
+                    sesión con tu cuenta. Si no has sido tú, deberías cambiar la
+                    contraseña de inmediato.
+                </p>
+
+                <div class="icon-style">
+
+                    <tr>
+                        <td>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                <path
+                                    d="M13 8.2l-1-1-4 4-4-4-1 1 4 4-4 4 1 1 4-4 4 4 1-1-4-4 4-4zM19 1H9c-1.1 0-2 .9-2 2v3h2V4h10v16H9v-2H7v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2z">
+                                </path>
+                            </svg>
+                        </td>
+                        <td>
+                            Dispositivo desconocido
+                        </td>
+                    </tr>
+
+                    <br>
+
+                    <tr>
+                        <td>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z">
+                                </path>
+                                <path
+                                    d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z">
+                                </path>
+                            </svg>
+                        </td>
+                        <td>
+                            Hace 30 minutos
+                        </td>
+                    </tr>
+
+                    <br>
+
+                    <tr>
+                        <td>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
+                                </path>
+                            </svg>
+                        </td>
+                        <td>
+                            Cerca de Medellín
+                        </td>
+                    </tr>
+                    <br>
+
+                    <div class="ip-address-text">
+                        <tr>
+                            <td>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                                        fill="#FFF">
+                                    </path>
+                                </svg>
+                            </td>
+                            <td>
+                                104.107.221.124 (dirección IP)
+                            </td>
+                        </tr>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="final-text">
+                <p>
+                    ¿Se te ha impedido iniciar sesión en tu cuenta de Google
+                    recientemente?
+                </p>
+            </div>
+
+            <div class="wrapper-btns">
+                <button class="btn-back">❌ No, proteger la cuenta</button>
+                <button class="btn-next">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48"
+                        enable-background="new 0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <polygon fill="#43A047" points="40.6,12.1 17,35.7 7.4,26.1 4.6,29 17,41.3 43.4,14.9">
+                        </polygon>
+                    </svg>
+                    Sí, he sido yo
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
